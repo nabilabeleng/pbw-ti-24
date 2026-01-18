@@ -9,17 +9,18 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
-        Schema::create('mahasiswas', function (Blueprint $table) {
-             $table->id();
-            $table->string('name');
-            $table->interger('nim')->unique();
-            $table->string('prodi');
-            $table->string('email')->unique();
-            $table->timestamps();
-        });
-    }
+public function up(): void
+{
+    Schema::create('mahasiswas', function (Blueprint $table) {
+        $table->id();
+        $table->string('nama');
+        $table->string('nim')->unique();
+        $table->string('jurusan');
+        $table->float('ipk', 3, 2)->nullable();
+        $table->timestamps();
+    });
+}
+
 
     /**
      * Reverse the migrations.
@@ -29,4 +30,3 @@ return new class extends Migration
         Schema::dropIfExists('mahasiswas');
     }
 };
-z
