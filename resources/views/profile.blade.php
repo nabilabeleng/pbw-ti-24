@@ -17,7 +17,7 @@
 <div class="profile-container">
     <div class="profile-card">
         <img src="{{ asset('img/miauw.PNG') }}" alt="Foto Profil" class="profile-img">
-        <h2 class="profile-name">Neneng Fajriyati</h2>
+        <h2 class="profile-name">Sasya Putri</h2>
         <p class="profile-role">Mahasiswa Teknologi Informasi | Universitas Muhammadiyah Semarang</p>
         <p class="profile-bio">
             Saya adalah mahasiswa yang memiliki semangat tinggi dalam bidang teknologi dan pengembangan aplikasi web. 
@@ -32,7 +32,7 @@
 
 <!-- Skills Section -->
 <section class="skills-section">
-    <h2 class="section-title" style="text-align:center;">💡 Keterampilan Saya</h2>
+    <h2 class="section-title" style="text-align:center;"> Keterampilan Saya</h2>
     <div class="skills-progress">
         <div>
             <div class="skill-info"><span>HTML & CSS</span><span>90%</span></div>
@@ -57,18 +57,17 @@
 <section class="extra-section">
     <div class="extra-container">
         <div class="extra-box">
-            <h3>🎓 Pendidikan</h3>
+            <h3> Pendidikan</h3>
             <ul>
                 <li><strong>Universitas Muhammadiyah Semarang</strong> — S1 Teknologi Informasi (2022 - Sekarang)</li>
                 <li>Fokus pada pengembangan web, pemrograman, dan sistem informasi.</li>
             </ul>
         </div>
         <div class="extra-box">
-            <h3>🌱 Hobi & Minat</h3>
+            <h3> Hobi & Minat</h3>
             <ul>
                 <li>Mendesain UI/UX modern</li>
                 <li>Mengembangkan website interaktif</li>
-                <li>Mendengarkan musik dan membaca</li>
             </ul>
         </div>
     </div>
