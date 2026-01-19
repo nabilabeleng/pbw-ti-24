@@ -76,14 +76,14 @@
     {{-- NAVBAR --}}
     <nav class="navbar navbar-dark px-4 mb-4 d-flex justify-content-between">
         <a class="navbar-brand fw-semibold" href="{{ route('mahasiswa.index') }}">
-            📘 Laravel Mahasiswa
+             Laravel Mahasiswa
         </a>
 
         {{-- AUTH --}}
         @auth
         <div class="d-flex align-items-center gap-3">
             <span class="text-light small">
-                👋 {{ Auth::user()->name }}
+                 {{ Auth::user()->name }}
             </span>
 
             <form action="{{ route('logout') }}" method="POST">
