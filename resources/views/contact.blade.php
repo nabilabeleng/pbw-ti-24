@@ -15,14 +15,14 @@
         <!-- Informasi Kontak -->
         <div class="contact-info">
             <h3>Informasi Kontak</h3>
-            <p><strong>Email:</strong> nengfams@gmail.com</p>
-            <p><strong>Telepon:</strong> +62 854-3308-2669</p>
+            <p><strong>Email:</strong> nabilasasya@gmail.com</p>
+            <p><strong>Telepon:</strong> +62 *************</p>
             <p><strong>Alamat:</strong> Universitas Muhammadiyah Semarang, Jawa Tengah</p>
 
             <div class="social-links">
-                <a href="https://www.instagram.com/nf.future/" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/neneng-fajriyati-60bb73375/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/nengfajriyati/BelajarLaravel_nengFa.git" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com//" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in//" target="_blank">LinkedIn</a>
+                <a href="https://github.com/">GitHub</a>
             </div>
         </div>
 
