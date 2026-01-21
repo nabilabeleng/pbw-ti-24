@@ -3,40 +3,71 @@
 @section('title', 'Home')
 
 @section('content')
-<div class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-text">
-        <h2>Selamat Datang di Website Saya</h2>
-        <p>Tempat berbagi informasi, berita terkini, dan profil pribadi saya.</p>
-        <a href="{{ url('/berita') }}" class="btn">Lihat Berita</a>
-    </div>
-</div>
 
-<section class="about">
-    <h2>Kegiatan & Prestasi</h2>
-    <p>Temukan berbagai informasi menarik tentang mahasiswa Unimus.</p>
+<!-- HERO -->
+<section class="container mb-5">
+    <div class="row align-items-center">
+
+        <!-- TEXT -->
+        <div class="col-md-6">
+            <h1 class="fw-bold display-5">
+                Website <span style="color:#AAC4F5">Modern</span><br>
+                untuk Mahasiswa
+            </h1>
+
+            <p class="text-muted mt-3">
+                Platform informatif dengan desain elegan, aman,
+                dan mudah digunakan.
+            </p>
+
+            <a href="{{ route('login') }}" class="btn btn-brand mt-3">
+                Mulai Sekarang →
+            </a>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="col-md-6 text-center">
+            <img src="{{ asset('img/logo.png') }}"
+                 alt="Logo Website"
+                 class="img-fluid"
+                 style="max-width:300px;">
+        </div>
+
+    </div>
 </section>
 
-<div class="info-cards">
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1544717305-996b815c338c?auto=format&fit=crop&w=800&q=80" alt="">
-        <h3>Kegiatan Mahasiswa</h3>
-        <p>Temukan berbagai kegiatan menarik yang dilakukan mahasiswa di kampus.</p>
-        <a href="#" class="btn btn-small">Lihat</a>
-    </div>
+<!-- FEATURES -->
+<section class="container">
+    <div class="row text-center g-4">
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1521790361543-f645cf042ec4?auto=format&fit=crop&w=800&q=80" alt="">
-        <h3>Prestasi</h3>
-        <p>Berbagai penghargaan dan pencapaian membanggakan dari mahasiswa Unimus.</p>
-        <a href="#" class="btn btn-small">Baca</a>
-    </div>
+        <div class="col-md-4">
+            <div class="card p-4 h-100">
+                <h4>📘 Akademik</h4>
+                <p class="text-muted mt-2">
+                    Kelola data mahasiswa dengan rapi dan cepat.
+                </p>
+            </div>
+        </div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="">
-        <h3>Tentang Saya</h3>
-        <p>Kenali lebih dekat siapa saya dan perjalanan saya dalam dunia teknologi informasi.</p>
-        <a href="{{ url('/profile') }}" class="btn btn-small">Profile</a>
+        <div class="col-md-4">
+            <div class="card p-4 h-100">
+                <h4>📰 Informasi</h4>
+                <p class="text-muted mt-2">
+                    Berita & update kampus terbaru.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-4 h-100">
+                <h4>🔐 Keamanan</h4>
+                <p class="text-muted mt-2">
+                    Sistem login aman & terpercaya.
+                </p>
+            </div>
+        </div>
+
     </div>
-</div>
+</section>
+
 @endsection

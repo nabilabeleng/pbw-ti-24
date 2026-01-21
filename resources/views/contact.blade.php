@@ -1,54 +1,63 @@
 @extends('layouts.app')
 
-@section('title', 'Contact | My App')
+@section('title', 'Contact Me')
 
 @section('content')
+<div class="container">
 
-<div class="contact-container">
-    <div class="contact-header">
-        <h2>Hubungi Saya</h2>
-        <p>Jika kamu ingin berkomunikasi, bekerja sama, atau sekadar bertanya — silakan kirim pesan melalui formulir di bawah ini.</p>
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Contact Me</h2>
+        <p class="text-muted">
+            Feel free to reach out through any of the platforms below
+        </p>
     </div>
 
-    <div class="contact-content">
+    <!-- CONTACT BLOCKS HORIZONTAL -->
+    <div class="row g-4 justify-content-center">
 
-        <!-- Informasi Kontak -->
-        <div class="contact-info">
-            <h3>Informasi Kontak</h3>
-            <p><strong>Email:</strong> nengfams@gmail.com</p>
-            <p><strong>Telepon:</strong> +62 854-3308-2669</p>
-            <p><strong>Alamat:</strong> Universitas Muhammadiyah Semarang, Jawa Tengah</p>
-
-            <div class="social-links">
-                <a href="https://www.instagram.com/nf.future/" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/neneng-fajriyati-60bb73375/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/nengfajriyati/BelajarLaravel_nengFa.git" target="_blank">GitHub</a>
+        <!-- EMAIL -->
+        <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+                <div class="fs-1 mb-3">📧</div>
+                <h5 class="fw-semibold">Email</h5>
+                <p class="text-muted mb-0">admin@myweb.ac.id</p>
             </div>
         </div>
 
-        <!-- Formulir Kontak -->
-        <div class="contact-form">
-            <form action="#" method="post">
-                @csrf
-                <div class="form-group">
-                    <label for="name">Nama</label>
-                    <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
-                </div>
+        <!-- WHATSAPP -->
+        <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+                <div class="fs-1 mb-3">📱</div>
+                <h5 class="fw-semibold">WhatsApp</h5>
+                <p class="text-muted mb-0">08xxxxxxxxxx</p>
+            </div>
+        </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required>
-                </div>
+        <!-- ADDRESS -->
+        <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+                <div class="fs-1 mb-3">📍</div>
+                <h5 class="fw-semibold">Alamat</h5>
+                <p class="text-muted mb-0">
+                    Kampus Universitas, Kota Anda
+                </p>
+            </div>
+        </div>
 
-                <div class="form-group">
-                    <label for="message">Pesan</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
-                </div>
+    </div>
 
-                <button type="submit" class="btn">Kirim Pesan</button>
-            </form>
+    <!-- NOTE / QUOTE -->
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="card p-4 text-center"
+                 style="background:#f0f4ff; border-left:6px solid #AAC4F5;">
+                <p class="mb-0 fst-italic text-muted">
+                    “Good communication is the foundation of every great collaboration.”
+                </p>
+            </div>
         </div>
     </div>
-</div>
 
+</div>
 @endsection

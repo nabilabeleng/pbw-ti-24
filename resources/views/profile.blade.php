@@ -1,77 +1,34 @@
 @extends('layouts.app')
 
-@section('title', 'Profile | My App')
+@section('title', 'Profile')
 
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card p-4">
+                <h3 class="fw-bold mb-3">Profil Website</h3>
 
-<!-- Hero Profile -->
-<section class="hero-profile">
-    <div class="hero-overlay"></div>
-    <div class="hero-text">
-        <h2>Tentang Saya</h2>
-        <p>Kenali lebih dekat siapa saya, perjalanan belajar, dan keterampilan yang sedang saya kembangkan.</p>
-    </div>
-</section>
+                <p class="text-muted">
+                    Website ini dikembangkan sebagai platform informasi dan pengelolaan data
+                    yang ditujukan untuk mendukung kegiatan akademik mahasiswa.
+                </p>
 
-<!-- Profile Card -->
-<div class="profile-container">
-    <div class="profile-card">
-        <img src="{{ asset('img/miauw.PNG') }}" alt="Foto Profil" class="profile-img">
-        <h2 class="profile-name">Neneng Fajriyati</h2>
-        <p class="profile-role">Mahasiswa Teknologi Informasi | Universitas Muhammadiyah Semarang</p>
-        <p class="profile-bio">
-            Saya adalah mahasiswa yang memiliki semangat tinggi dalam bidang teknologi dan pengembangan aplikasi web. 
-            Saat ini saya fokus mempelajari <strong>Laravel</strong> dan membangun proyek pribadi untuk meningkatkan kemampuan saya.
-        </p>
-        <div class="profile-buttons">
-            <a href="/contact" class="btn">Hubungi Saya</a>
-            <a href="/berita" class="btn btn-outline">Lihat Berita</a>
+                <p class="text-muted">
+                    Dengan desain modern dan sistem yang terintegrasi, website ini diharapkan
+                    dapat mempermudah pengguna dalam mengakses informasi, mengelola data,
+                    serta meningkatkan efisiensi administrasi.
+                </p>
+
+                <hr>
+
+                <ul class="list-unstyled">
+                    <li><strong>Nama Website:</strong> MyWeb Mahasiswa</li>
+                    <li><strong>Fokus:</strong> Informasi & Manajemen Data Mahasiswa</li>
+                    <li><strong>Teknologi:</strong> Laravel, Bootstrap 5</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
-
-<!-- Skills Section -->
-<section class="skills-section">
-    <h2 class="section-title" style="text-align:center;">💡 Keterampilan Saya</h2>
-    <div class="skills-progress">
-        <div>
-            <div class="skill-info"><span>HTML & CSS</span><span>90%</span></div>
-            <div class="progress-bar"><div class="progress" style="--progress-width:90%;"></div></div>
-        </div>
-        <div>
-            <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
-            <div class="progress-bar"><div class="progress" style="--progress-width:75%;"></div></div>
-        </div>
-        <div>
-            <div class="skill-info"><span>Laravel</span><span>80%</span></div>
-            <div class="progress-bar"><div class="progress" style="--progress-width:80%;"></div></div>
-        </div>
-        <div>
-            <div class="skill-info"><span>Komunikasi</span><span>95%</span></div>
-            <div class="progress-bar"><div class="progress" style="--progress-width:95%;"></div></div>
-        </div>
-    </div>
-</section>
-
-<!-- Education & Hobby -->
-<section class="extra-section">
-    <div class="extra-container">
-        <div class="extra-box">
-            <h3>🎓 Pendidikan</h3>
-            <ul>
-                <li><strong>Universitas Muhammadiyah Semarang</strong> — S1 Teknologi Informasi (2022 - Sekarang)</li>
-                <li>Fokus pada pengembangan web, pemrograman, dan sistem informasi.</li>
-            </ul>
-        </div>
-        <div class="extra-box">
-            <h3>🌱 Hobi & Minat</h3>
-            <ul>
-                <li>Mendesain UI/UX modern</li>
-                <li>Mengembangkan website interaktif</li>
-                <li>Mendengarkan musik dan membaca</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
 @endsection

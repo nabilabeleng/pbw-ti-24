@@ -11,13 +11,13 @@ class Berita extends Model
         [
             "judul" => "Laravel 11 Rilis",
             "slug" => "laravel-11-rilis",
-            "penulis" => "Neneng",
+            "penulis" => "Sasya",
             "konten" => "Laravel 11 membawa banyak fitur baru..."
         ],
         [
             "judul" => "Belajar Blade",
             "slug" => "belajar-blade",
-            "penulis" => "Fajriyati",
+            "penulis" => "Putri",
             "konten" => "Blade memudahkan kita membuat layout website..."
         ]
     ];

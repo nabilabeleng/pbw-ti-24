@@ -8,8 +8,8 @@
     {{-- Bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    {{-- Google Font --}}
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    {{-- Google Fonts --}}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -17,18 +17,28 @@
             font-family: 'Inter', sans-serif;
         }
 
+        /* NAVBAR */
         .navbar {
-            border-radius: 14px;
+            border-radius: 16px;
             margin-top: 20px;
-            background: linear-gradient(135deg, #1f2937, #111827);
+            background: linear-gradient(135deg, #3F84AC, #2f6f94);
+            box-shadow: 0 12px 30px rgba(63,132,172,.35);
         }
 
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            letter-spacing: .3px;
+        }
+
+        /* CARD */
         .card {
             border: none;
             border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0,0,0,.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,.08);
         }
 
+        /* BUTTON */
         .btn {
             border-radius: 12px;
             padding: 8px 16px;
@@ -36,8 +46,12 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            background: linear-gradient(135deg, #3F84AC, #2f6f94);
             border: none;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2f6f94, #245a77);
         }
 
         .btn-warning {
@@ -51,13 +65,19 @@
             border: none;
         }
 
+        .btn-outline-light {
+            border-radius: 10px;
+        }
+
+        /* TABLE */
         table thead {
-            background: #f1f5f9;
+            background: rgba(63,132,172,.12);
         }
 
         table th {
             font-weight: 600;
             color: #334155;
+            font-size: .9rem;
         }
 
         .table tbody tr {
@@ -65,7 +85,7 @@
         }
 
         .table tbody tr:hover {
-            background: #f8fafc;
+            background: #f1f7fb;
         }
     </style>
 </head>
@@ -75,15 +95,15 @@
 
     {{-- NAVBAR --}}
     <nav class="navbar navbar-dark px-4 mb-4 d-flex justify-content-between">
-        <a class="navbar-brand fw-semibold" href="{{ route('mahasiswa.index') }}">
-            📘 Laravel Mahasiswa
+        <a class="navbar-brand" href="{{ route('mahasiswa.index') }}">
+            MyWeb
         </a>
 
         {{-- AUTH --}}
         @auth
         <div class="d-flex align-items-center gap-3">
             <span class="text-light small">
-                👋 {{ Auth::user()->name }}
+                 {{ Auth::user()->name }}
             </span>
 
             <form action="{{ route('logout') }}" method="POST">
